@@ -1,0 +1,14 @@
+{
+  "en": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "desc": "This is my description"
+  },
+  "pt": {
+    "home": "Início",
+    "about": "sobre",
+    "contact": "contato",
+    "desc": "descrição"
+  }
+}
