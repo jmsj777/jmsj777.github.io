@@ -1,31 +1,3 @@
-function loadTranslations() {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "translations.json", true);
-
-  xhr.onprogress = function() {
-    console.log("READYSTATE: ", xhr.readyState);
-  };
-  xhr.onload = function() {
-    if (this.status == 200) {
-      var users = JSON.parse(this.responseText);
-
-      //console.log(users);
-
-      var output = "";
-      for (var i in users) {
-        output += `<div class="user">
-          <img src='${users[i].avatar_url}' width="70" height="70">
-          <ul>
-            <li>ID: ${users[i].id}</li>
-            <li>Login: ${users[i].login}</li>
-          </ul> </div>`;
-      }
-
-      document.getElementById("users").innerHTML = output;
-    }
-  };
-
-
 //define language reload anchors
 var dataReload = document.querySelectorAll("[data-reload]");
 
