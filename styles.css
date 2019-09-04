@@ -1,29 +1,43 @@
 body {
   background: #dddddd;
+  margin: 1px;
 }
 
 h1 {
-  align-content: center;
+  /* align-content: center; */
 }
 
 button {
-  color: aliceblue;
   background: blue;
-  height: 50px;
-  width: 200px;
-  border-radius: 50px;
+  height: 75px;
+  width: 120px;
+  border-radius: 50%;
+  border-style: none;
   font-size: 20px;
   text-transform: lowercase;
-  transition: width 2s, height 4s;
 }
 
-button:hover {
+button#start-tour {
+  transition: all 2s;
+
+}
+
+button#start-tour:hover {
   width: 600px;
   height: 150px;
+  color: transparent;
 }
 
 .container {
-  position: relative;
   align-content: center;
   text-align: center;
+  border: rgb(80, 120, 100);
+  border-width: 10px;
+  border-style: solid;
+  width: 1000px;
+  height: 500px;
+  background: rgb(80, 120, 100);
+  padding: 16px 16px;
+  margin: auto;
+  color: aliceblue;
 }
